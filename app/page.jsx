@@ -273,9 +273,9 @@ export default function Portfolio() {
               transition={{ delay: 0.4, duration: 0.8 }}
             >
               <div className="relative w-80 h-80 mx-auto">
-                <div className="absolute inset-0 bg-gradient-to-r from-black/0 via-white/5 to-black/10 rounded-sm z-10"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-black/0 via-white/0 to-black/0 rounded-sm z-10"></div>
                 <img
-                  src="/sk3.jpg"
+                  src="/sk4.jpg"
                   alt="Shakil Khan"
                   className="w-full h-full object-cover rounded-sm"
                 />
