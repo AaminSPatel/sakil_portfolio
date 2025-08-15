@@ -699,7 +699,7 @@ export default function Portfolio() {
                
                 <div className="flex items-center gap-3">
                   <FaMapMarkerAlt className="accent-text" />
-                  <span>Kohinoor Colony, Teen Imli, Indore</span>
+                  <span>Indore, MP, India</span>
                 </div>
               </div>
             </motion.div>
