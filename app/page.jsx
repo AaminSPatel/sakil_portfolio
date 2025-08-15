@@ -277,7 +277,7 @@ export default function Portfolio() {
                 <img
                   src="/sk4.jpg"
                   alt="Shakil Khan"
-                  className="w-full h-full object-cover rounded-sm"
+                  className="w-full scale-110 h-full object-cover rounded-sm"
                 />
               </div>
             </motion.div>
@@ -605,8 +605,14 @@ export default function Portfolio() {
           Email Me
         </a>
         <button className="border accent-border accent-text hover:accent-bg hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center justify-center gap-2">
-          <FaSnapchatGhost />
+           <a
+                  href="https://www.snapchat.com/add/desichoraa07?share_id=dF9kJAPfZn4&locale=en-IN"
+                  className=" flex items-center justify-center transition-colors gap-2"
+                >
+                 <FaSnapchatGhost />
           View My Lenses
+                </a>
+          
         </button>
       </div>
     </motion.div>
