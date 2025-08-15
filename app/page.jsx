@@ -109,7 +109,7 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div className="bg-black text-white min-h-screen max-w-screen overflow-hidden">
       <header className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm border-b border-gray-800">
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-between h-16">
@@ -118,7 +118,7 @@ export default function Portfolio() {
               animate={{ opacity: 1, x: 0 }}
               className="text-xl font-bold"
             >
-              Shakil <span className="accent-text">Khan</span>
+              Shakil Khan
             </motion.div>
 
             {/* Desktop Navigation */}
@@ -224,7 +224,7 @@ export default function Portfolio() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.8 }}
               >
-                Shakil <span className="accent-text">Khan</span>
+                Shakil Khan
               </motion.h1>
               <motion.p
                 className="text-xl lg:text-2xl text-gray-300 mb-8"
@@ -263,29 +263,7 @@ export default function Portfolio() {
                   Contact Me
                 </a>
               </motion.div>
-              <motion.div
-                className="flex gap-4 mt-6"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1, duration: 0.8 }}
-              >
-                <a
-                  href="https://wa.me/918120173615"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-gray-800 hover:accent-bg rounded-full flex items-center justify-center transition-colors"
-                >
-                  <FaWhatsapp />
-                </a>
-                <a
-                  href="https://youtube.com/@yourchannel"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-gray-800 hover:accent-bg rounded-full flex items-center justify-center transition-colors"
-                >
-                  <FaYoutube />
-                </a>
-              </motion.div>
+          
             </motion.div>
 
             <motion.div
@@ -295,11 +273,11 @@ export default function Portfolio() {
               transition={{ delay: 0.4, duration: 0.8 }}
             >
               <div className="relative w-80 h-80 mx-auto">
-                <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/0 to-black/90 rounded-sm z-10"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-black/0 via-white/5 to-black/10 rounded-sm z-10"></div>
                 <img
-                  src="/sk2.jpg"
+                  src="/sk3.jpg"
                   alt="Shakil Khan"
-                  className="w-full h-full object-center rounded-sm"
+                  className="w-full h-full object-cover rounded-sm"
                 />
               </div>
             </motion.div>
@@ -578,7 +556,7 @@ export default function Portfolio() {
                   <img
                     src={work.image || "/placeholder.svg"}
                     alt={work.title}
-                    className="w-full h-full object-center group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -591,11 +569,7 @@ export default function Portfolio() {
                     </h3>
                   </div>
                 </div>
-                <div className="absolute hidden top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="w-10 h-10 accent-bg rounded-full flex items-center justify-center">
-                    <FaPlay className="text-white text-sm ml-1" />
-                  </div>
-                </div>
+             
               </motion.div>
             ))}
           </div>
@@ -603,42 +577,41 @@ export default function Portfolio() {
       </section>
 
       {/* CTA Section */}
-      <section id="contact" className="py-20 bg-gray-950">
-        <div className="container mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center max-w-4xl mx-auto"
-          >
-            <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-              Ready to Bring Your{" "}
-              <span className="accent-text">Vision to Life?</span>
-            </h2>
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              Let's collaborate to create stunning visuals that tell your story.
-              Whether it's photo retouching, video editing, or custom Snapchat
-              lenses, I'm here to transform your ideas into reality.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="https://wa.me/918120173615?text=Hi%20Shakil,%20I%20would%20like%20to%20discuss%20a%20project%20with%20you"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="accent-bg hover:accent-bg text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center justify-center gap-2"
-              >
-                <FaWhatsapp />
-                Chat on WhatsApp
-              </a>
-              <button className="border accent-border accent-text hover:accent-bg hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center justify-center gap-2">
-                <FaSnapchatGhost />
-                View My Lenses
-              </button>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      {/* CTA Section */}
+<section id="contact" className="py-20 bg-gray-950">
+  <div className="container mx-auto px-6">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+      className="text-center max-w-4xl mx-auto"
+    >
+      <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+        Ready to Bring Your{" "}
+        <span className="accent-text">Vision to Life?</span>
+      </h2>
+      <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+        Let's collaborate to create stunning visuals that tell your story.
+        Whether it's photo retouching, video editing, or custom Snapchat
+        lenses, I'm here to transform your ideas into reality.
+      </p>
+      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="mailto:abbashkhan66408@gmail.com"
+          className="accent-bg hover:accent-bg text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center justify-center gap-2"
+        >
+          <FaEnvelope />
+          Email Me
+        </a>
+        <button className="border accent-border accent-text hover:accent-bg hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center justify-center gap-2">
+          <FaSnapchatGhost />
+          View My Lenses
+        </button>
+      </div>
+    </motion.div>
+  </div>
+</section>
 
       {/* Footer */}
       <footer className="py-12 bg-black border-t border-gray-800">
@@ -658,40 +631,28 @@ export default function Portfolio() {
                 and visual storytelling.
               </p>
               <div className="flex gap-4">
+                
                 <a
-                  href="#"
-                  className="w-10 h-10 bg-gray-800 hover:accent-bg rounded-full flex items-center justify-center transition-colors"
-                >
-                  <FaInstagram />
-                </a>
-                <a
-                  href="#"
+                  href="https://www.snapchat.com/add/desichoraa07?share_id=dF9kJAPfZn4&locale=en-IN"
                   className="w-10 h-10 bg-gray-800 hover:accent-bg rounded-full flex items-center justify-center transition-colors"
                 >
                   <FaSnapchatGhost />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/shakil-khan-1243762b3/"
                   className="w-10 h-10 bg-gray-800 hover:accent-bg rounded-full flex items-center justify-center transition-colors"
                 >
                   <FaLinkedin />
                 </a>
-                <a
-                  href="https://wa.me/918120173615"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-gray-800 hover:accent-bg rounded-full flex items-center justify-center transition-colors"
-                >
-                  <FaWhatsapp />
-                </a>
-                <a
+              
+              {/*   <a
                   href="https://youtube.com/@yourchannel"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-gray-800 hover:accent-bg rounded-full flex items-center justify-center transition-colors"
                 >
                   <FaYoutube />
-                </a>
+                </a> */}
               </div>
             </motion.div>
 
@@ -726,13 +687,10 @@ export default function Portfolio() {
                 <div className="flex items-center gap-3">
                   <FaEnvelope className="accent-text" />
                   <span className="text-sm">
-                    shakilkhanshakil786shakilkhan@gmail.com
+                    abbashkhan66408@gmail.com 
                   </span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <FaPhone className="accent-text" />
-                  <span>+91 8120173615</span>
-                </div>
+               
                 <div className="flex items-center gap-3">
                   <FaMapMarkerAlt className="accent-text" />
                   <span>Kohinoor Colony, Teen Imli, Indore</span>
@@ -749,7 +707,7 @@ export default function Portfolio() {
             className="border-t border-gray-800 pt-8 text-center text-gray-400"
           >
             <p>
-              &copy; 2024 Shakil Khan. All rights reserved. Crafted with passion
+              &copy; 2025 Shakil Khan. All rights reserved. Crafted with passion
               for visual excellence.
             </p>
           </motion.div>
